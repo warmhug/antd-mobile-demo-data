@@ -154,4 +154,4 @@ data.forEach(function (item) {
   transData[item.QF].push(item);
 });
 // console.log(transData)
-export default transData;
+module.exports = transData;
