@@ -164,9 +164,9 @@
 
   var transData = {};
   data.forEach(function (item) {
-    item.QF = item.spell[0].toUpperCase();
-    transData[item.QF] = transData[item.QF] || [];
-    transData[item.QF].push(item);
+    var qf = item.spell[0].toUpperCase();
+    transData[qf] = transData[qf] || [];
+    transData[qf].push(item);
   });
   // console.log(transData)
   module.exports = transData;
