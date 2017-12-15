@@ -15,7 +15,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup lib/index.js --output.format umd --name 'antd-mobile-demo-data' --output.file dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "npm run build && npm publish"
   },
   "author": "",
   "license": "ISC",
