@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn publish
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  9.10.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "antd-mobile-full-demo-data",
+    "version": "0.2.1",
+    "description": "antd-mobile-full-demo-data",
+    "repository": "https://github.com/farry1421/antd-mobile-full-demo-data",
+    "bugs": {
+      "url": "https://github.com/warmhug/antd-mobile-demo-data/issues"
+    },
+    "files": [
+      "dist"
+    ],
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "rollup lib/index.js --output.format umd --name 'antd-mobile-demo-data' --output.file dist/index.js",
+      "pub": "npm run build && npm publish"
+    },
+    "author": "farry1421",
+    "license": "ISC",
+    "devDependencies": {
+      "rollup": "^0.52.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.npm.taobao.org/antd-mobile-full-demo-data: unauthorized
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:61779:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:121917:22)
+      at Request.emit (events.js:180:13)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:122900:10)
+      at Request.emit (events.js:180:13)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:122820:12)
+      at Object.onceWrapper (events.js:272:13)
+      at IncomingMessage.emit (events.js:185:15)
+      at endReadableNT (_stream_readable.js:1106:12)
+      at process._tickCallback (internal/process/next_tick.js:114:19)
