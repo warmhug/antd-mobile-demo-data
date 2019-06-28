@@ -14,12 +14,16 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "build": "rollup lib/index.js --output.format umd --name 'antd-mobile-demo-data' --output.file dist/index.js",
+    "build": "rollup -c ",
     "pub": "npm run build && npm publish"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "rollup": "^0.52.1"
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "rollup": "^1.16.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.1.0"
   }
 }
